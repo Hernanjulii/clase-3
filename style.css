@@ -37,6 +37,18 @@
     list-style: none;
 
 }
+.derechos-pag{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
 /*Portada*/
 .portada{
     width: 100%;
@@ -159,6 +171,7 @@
 }
 .img7{
     grid-area: img7;
+    width: 50px;
 }
 
 .galeria img{
