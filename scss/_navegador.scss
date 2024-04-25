@@ -2,7 +2,7 @@
 .navegadorlogo{
     width: 75px;
     height: 75px;
-   position: initial;
+   position: absolute;
 }
 .navegador{
     background-color: $color-primario;
@@ -12,11 +12,35 @@
     display: flex;
     justify-content: end;
     padding: 10px;
+    .icono-menu{
+        display: none;
+        &:hover + .navegador-links{
+            right: 0;
+        }
+        @media (max-width: 576px){
+            display: block;
+        }        
+        
+    }
 }
 
 .navegador-links{
     display: flex;
     gap: 20px;
+    @media(max-width: 576px){
+        position: absolute;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        background-color: $color-primario;
+        height: 100vh;
+        flex-direction: column;
+        padding-top: 100px;
+        transition: 0.5s;
+        &:hover{
+            right: 0px;
+        }
+    }
 }
 
 .navegador-link{

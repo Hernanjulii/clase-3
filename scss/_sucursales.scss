@@ -15,4 +15,8 @@
     @extend %boton;
     background-color: $color-terciario;
     color: $color-cuarto;
+    &:hover{
+        background-color: $color-cuarto;
+        width: 150px;
+    }
 }
